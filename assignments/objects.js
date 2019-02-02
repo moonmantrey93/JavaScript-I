@@ -25,7 +25,7 @@ const internTwo = {
   "name": "Kennan",
   "email": "kdiben1@tinypic.com",
   "gender": "M",
-    speak () {
+    speak: function () {
       console.log('Hello, my name is Kennan!');
     }
 }
