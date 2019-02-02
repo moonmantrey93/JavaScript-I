@@ -119,7 +119,13 @@ console.log(carYears);
   //the year 2000 by populating the array oldCars and logging it's length.
 
 let oldCars =[];
-console.log();
+
+
+for (let i = 0; i < carYears.length; i++) {
+    if (carYears[i] > 2000) oldCars.push(carYears[i])
+}
+
+console.log(oldCars);
 
 // ==== Challenge 6 ====
 // A buyer is interested in seeing only BMW and Audi cars
@@ -127,5 +133,10 @@ console.log();
   //and Audi cars.  Once you have populated the BMWAndAudi array,
    //use JSON.stringify() to show the results of the array in the console.
 
-let BMWAndAudi =[];
-console.log();
+   const BMWAndAudi = inventory.filter(
+       car => car.car_make === "BMW" || car.car_make === "Audi"
+   )
+
+   console.log(JSON.stringify(BMWAndAudi));
+
+   
