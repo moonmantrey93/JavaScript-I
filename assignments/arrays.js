@@ -91,7 +91,13 @@ console.log(inventory[inventory.length - 1].car_make, inventory[inventory.length
 // on the website. Sort all the car model names into alphabetical order
  //and log the results in the console
 
+ let carModels = [];
 
+ for (let i = 0; i < inventory.length; i++) {
+     carModels.push(inventory[i].car_make.toUpperCase());
+ }
+
+ console.log(carModels.sort());
 
 // ==== Challenge 4 ====
 // The accounting team needs all the years from every car
@@ -99,7 +105,13 @@ console.log(inventory[inventory.length - 1].car_make, inventory[inventory.length
   //only the car years and log the result in the console.
 
 let carYears = [];
-console.log();
+
+
+for (let i = 0; i < inventory.length; i++) {
+    carYears.push(inventory[i].car_year);
+}
+
+console.log(carYears);
 
 // ==== Challenge 5 ====
 // The car lot manager needs to find out how many cars are older than the year 2000.
